@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+  --card1-color: hsl(31, 77%, 52%);
+  --card2-color: hsl(184, 100%, 22%);
+  --card3-color: hsl(179, 100%, 13%);
+
+  --text-color: hsla(0, 0%, 100%, 0.75);
+  --btn-color: hsl(0, 0%, 95%);
+
+  --title-font: 'Big Shoulders Display', sans-serif;
+  --text-font: 'Lexend Deca', sans-serif;
+
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 375px;
+  height: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: var(--btn-color);
+}
+
+.container {
+  margin: 0 auto;
+
+}
+
+.container__sedans {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 450px;
+  padding: 15px 25px;
+  border-radius: 10px 10px 0 0;
+  background-color: var(--card1-color);
+}
+
+.container__suvs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 450px;
+  padding: 25px;
+  background-color: var(--card2-color);
+}
+
+.container__luxuary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 450px;
+  padding: 25px;
+  border-radius: 0 0 10px 10px;
+  background-color: var(--card3-color);
+}
+
+.title {
+  padding: 20px 0;
+  color: var(--btn-color);
+  font-family: var(--title-font);
+  font-size: 2.3rem;
+  text-transform: uppercase;
+}
+
+.text {
+  padding: 5px 0;
+  color: var(--text-color);
+  font-family: var(--text-font);
+}
+
+.sedans__btn {
+  width: 60%;
+  padding: 10px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 40px;
+  color: var(--card1-color);
+  font-family: var(--text-font);
+  cursor: pointer;
+}
+
+.suvs__btn {
+  width: 60%;
+  padding: 10px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 40px;
+  color: var(--card2-color);
+  font-family: var(--text-font);
+  cursor: pointer;
+}
+
+.luxuary__btn {
+  width: 60%;
+  padding: 10px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 40px;
+  color: var(--card3-color);
+  font-family: var(--text-font);
+  cursor: pointer;
+}
+
+img {
+  width: 65px;
+}
+
+@media screen and (min-width: 640px) {
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 992px;
+    height: 100vh;
+  }
+
+  .container {
+    display: flex;
+    width: 100%;
+  }
+
+  .container__sedans {
+    border-radius: 10px 0 0 10px;
+  }
+
+  .container__luxuary {
+    border-radius: 0 10px 10px 0;
+  }
+}
